@@ -36,5 +36,5 @@ The project consists of two main parts:
 - Execute the Python scripts to interact with the database and perform specific tasks outlined in the project requirements.
 
 ## Contributors
-- [Rowan Arora]
-- [Codi Lee]
+- Rowan Arora
+- Codi Lee
