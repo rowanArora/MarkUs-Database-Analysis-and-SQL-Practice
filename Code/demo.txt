@@ -1,0 +1,219 @@
+csc343h-aroraa39=> \i runner.txt 
+-------------------- Loading schema and data: --------------------
+
+psql:schema.ddl:119: NOTICE:  drop cascades to 42 other objects
+DETAIL:  drop cascades to type recording.phonenum
+drop cascades to table recording.person
+drop cascades to table recording.studio
+drop cascades to table recording.managementhistory
+drop cascades to table recording.engineer
+drop cascades to table recording.engcert
+drop cascades to table recording.session
+drop cascades to table recording.somesessionengineers
+drop cascades to table recording.band
+drop cascades to table recording.bandmembership
+drop cascades to table recording.play
+drop cascades to table recording.recseg
+drop cascades to table recording.track
+drop cascades to table recording.trackseg
+drop cascades to table recording.album
+drop cascades to table recording.albumtrack
+drop cascades to view recording.old_managers
+drop cascades to view recording.curr_managers
+drop cascades to view recording.all_album_tracks
+drop cascades to view recording.studio_per_album
+drop cascades to view recording.no_album_studios
+drop cascades to view recording.album_counts
+drop cascades to view recording.sessions_per_band
+drop cascades to view recording.sessions_per_founder
+drop cascades to view recording.sessions_per_bandmember
+drop cascades to view recording.other_people
+drop cascades to view recording.sessions_per_other
+drop cascades to view recording.converted_time
+drop cascades to view recording.total_time_per_session
+drop cascades to view recording.founders_played
+drop cascades to view recording.musicians_played
+drop cascades to view recording.album_tracks_first
+drop cascades to view recording.album_tracks_second
+drop cascades to view recording.album_tracks_rest
+drop cascades to view recording.album_tracks_all
+drop cascades to view recording.album_tracks_sessions
+drop cascades to view recording.album_sessions
+drop cascades to view recording.album_tracks
+drop cascades to view recording.album_bands
+drop cascades to view recording.album_founders
+drop cascades to view recording.album_musicians
+drop cascades to view recording.album_musicians_all
+DROP SCHEMA
+CREATE SCHEMA
+SET
+CREATE DOMAIN
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+SET
+INSERT 0 12
+INSERT 0 3
+INSERT 0 5
+INSERT 0 3
+INSERT 0 3
+INSERT 0 4
+INSERT 0 3
+INSERT 0 8
+INSERT 0 3
+INSERT 0 12
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+INSERT 0 7
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+DO
+INSERT 0 2
+INSERT 0 3
+
+-------------------- Query 1: -----------------------------------
+
+SET
+psql:q1.sql:7: NOTICE:  view "old_managers" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q1.sql:19: NOTICE:  view "curr_managers" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q1.sql:27: NOTICE:  view "all_album_tracks" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q1.sql:37: NOTICE:  view "studio_per_album" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q1.sql:48: NOTICE:  view "no_album_studios" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q1.sql:57: NOTICE:  view "album_counts" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+ studio_id | person_id |     name     | album_count 
+-----------+-----------+--------------+-------------
+         1 |         1 | Donna Meagle |           1
+         2 |         1 | Donna Meagle |           0
+         3 |         4 | Leslie Knope |           1
+(3 rows)
+
+
+-------------------- Query 2: -----------------------------------
+
+SET
+psql:q2.sql:8: NOTICE:  view "sessions_per_band" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q2.sql:18: NOTICE:  view "sessions_per_founder" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q2.sql:27: NOTICE:  view "sessions_per_bandmember" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q2.sql:37: NOTICE:  view "other_people" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q2.sql:49: NOTICE:  view "sessions_per_other" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+ person_id | num_sessions 
+-----------+--------------
+         1 |            0
+         2 |            1
+         3 |            0
+         4 |            0
+         5 |            0
+         6 |            0
+         7 |            0
+         8 |            8
+         9 |            5
+        10 |            5
+        11 |            5
+        12 |            3
+(12 rows)
+
+
+-------------------- Query 3: -----------------------------------
+
+SET
+psql:q3.sql:7: NOTICE:  view "converted_time" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q3.sql:19: NOTICE:  view "total_time_per_session" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q3.sql:29: NOTICE:  view "founders_played" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q3.sql:46: NOTICE:  view "musicians_played" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+ session_id | person_id |    name    | band_name  
+------------+-----------+------------+------------
+          7 |         8 | Andy Dwyer | Andy Dwyer
+(1 row)
+
+
+-------------------- Query 4: -----------------------------------
+
+SET
+psql:q4.sql:8: NOTICE:  view "album_tracks_first" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q4.sql:14: NOTICE:  view "album_tracks_second" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q4.sql:21: NOTICE:  view "album_tracks_rest" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q4.sql:29: NOTICE:  view "album_tracks_all" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q4.sql:39: NOTICE:  view "album_sessions" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q4.sql:50: NOTICE:  view "album_num_sessions" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q4.sql:61: NOTICE:  view "album_bands" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q4.sql:69: NOTICE:  view "album_founders" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q4.sql:77: NOTICE:  view "album_musicians" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:q4.sql:86: NOTICE:  view "album_musicians_all" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+ album_id |       name        | num_sessions | num_musicians 
+----------+-------------------+--------------+---------------
+        1 | The Awesome Album |            4 |             6
+(1 row)
