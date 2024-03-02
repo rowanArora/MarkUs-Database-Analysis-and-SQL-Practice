@@ -36,12 +36,5 @@ The project consists of two main parts:
 - Execute the Python scripts to interact with the database and perform specific tasks outlined in the project requirements.
 
 ## Contributors
-- [Your Name]
-- [Collaborator's Name] (if applicable)
-
-## License
-This project is licensed under the [License Name] License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize this template further according to your project's specific details and requirements.
+- [Rowan Arora]
+- [Codi Lee]
